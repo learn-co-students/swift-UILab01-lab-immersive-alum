@@ -22,20 +22,18 @@ class ViewController: UIViewController {
         case 0:
             colorChanger(color: UIColor.red)
         case 1:
-            lightBulb.backgroundColor = UIColor.yellow
+            colorChanger(color: UIColor.yellow)
         case 2:
-            lightBulb.backgroundColor = UIColor.blue
+            colorChanger(color: UIColor.blue)
         case 3:
-            lightBulb.backgroundColor = UIColor.green
+            colorChanger(color: UIColor.green)
         default:
-            lightBulb.backgroundColor = UIColor.cyan
+            colorChanger(color: UIColor.cyan)
         }
     }
-    
-    // My own helper!!
 
-    func colorChanger(color: String) {
-        
+    func colorChanger(color: UIColor) {
+        lightBulb.backgroundColor = color
     }
     
 }
